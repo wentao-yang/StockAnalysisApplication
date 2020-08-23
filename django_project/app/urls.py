@@ -6,4 +6,5 @@ urlpatterns = [
     path('', views.home),
     path('api/symbol=<str:symbol>/', views.data),
     path('api/symbols/', views.symbols),
+    path('api/', views.home),
 ]
