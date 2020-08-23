@@ -18,6 +18,9 @@ A lot of parameters about the data can be changed, such as the start and
 stop time for the historical period and the stocks whose data will be
 retrieved. Note that Quandl does not have data for years past 2018, but
 InfluxDB is designed as a real time TSDB.
+
+Note: You will have to change the necessary parameters in
+django_project/app/views.py
 '''
 
 # Changeable Parameters; Note Quandl is missing full data for some stocks,
