@@ -50,7 +50,7 @@ function App() {
                 <Home />
               </Route>
               <Route exact path='/search'>
-                <Search term={searchTerm} setStock={(e) => setStock(e)}/>
+                <Search term={searchTerm} setStock={(e) => setStock(e)} stocks={stocks}/>
               </Route>
               <Route stock path='/stock'>
                 <Stock stock={stock}/>

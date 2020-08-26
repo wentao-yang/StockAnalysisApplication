@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { Jumbotron } from 'react-bootstrap';
-import StockTable from '../Components/StocksTable.js'
+import StockTable from '../Components/StocksTable.js';
 
 function Stocks(props) {
     const[sorted, setSorted] = useState(true); // For the table
@@ -19,7 +19,7 @@ function Stocks(props) {
                     Here are all the stocks stored in the database:
                 </p>
             </Jumbotron>
-            <StockTable stocks={props.stocks} sorted={sorted} setSorted={(e) => setSorted(e)} setStock={(e) => props.setStock(e)}/>
+            <StockTable stocks={props.stocks.names} sorted={sorted} setSorted={(e) => setSorted(e)} setStock={(e) => props.setStock(e)}/>
         </div>
     )
 }

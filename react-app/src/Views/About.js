@@ -11,7 +11,7 @@ function About() {
     };
     
     return (
-        <div className='Home'>
+        <div className='About'>
             <Jumbotron style ={jumboStyle}>
                 <h1>Stock Analysis App</h1>
 

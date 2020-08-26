@@ -4,7 +4,7 @@ import StocksRows from './StocksRows';
 
 
 function StocksTable(props) {
-    const data = props.stocks.names;
+    const data = props.stocks;
 
     if (props.sorted) {
         data.sort();
