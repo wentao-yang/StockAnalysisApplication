@@ -3,20 +3,24 @@ import {
   BrowserRouter as Router,
   Switch,
   Route
-} from 'react-router-dom'
+} from 'react-router-dom';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css'
-import Header from './Components/Header'
-import Footer from './Components/Footer'
-import About from './Views/About'
-import Home from './Views/Home'
-import Search from './Views/Search'
-import Stock from './Views/Stock'
-import Stocks from './Views/Stocks'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
+import About from './Views/About';
+import Home from './Views/Home';
+import Search from './Views/Search';
+import Stock from './Views/Stock';
+import Stocks from './Views/Stocks';
 
 
 function App() {
-  const [searchTerm, setSearchTerm] = useState('')
+  const [searchTerm, setSearchTerm] = useState('');
+  const [stockSymb, setStockSYmb] = useState('');
+  fetch('http://localhost:8000/api/symbols/', {
+    method: 'GET'
+  }).then(response => response.json()).then(data => console.log(data));
 
   return (
     <div className='App'>
