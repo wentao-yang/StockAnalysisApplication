@@ -8,6 +8,7 @@ import {
 } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
+
 var setTerm; // We will store the setTerm function in here
               // To use in another function
 
@@ -29,7 +30,7 @@ function Header(props) {
 
       {/* Search form */}
       <Form inline>
-        <FormControl type='text' placeholder='Search (Please use button)' className='mr-sm-2' id='search-term'/>
+        <FormControl type='text' placeholder='Ticker Symbol Only' className='mr-sm-2' id='search-term'/>
         <Button variant='outline-info' type='submit' as={Link} to='/search' onClick={submitForm}>Search</Button>
       </Form>
       </Navbar>
