@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Stock() {
+function Stock(props) {
     return (
-        <div clasName='Stock'>
-            <h1>This is the individual stock page</h1>
+        <div className='Stock'>
+            <h1>The stock is {props.stock}</h1>
         </div>
     )
 }

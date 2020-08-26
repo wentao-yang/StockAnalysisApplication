@@ -1,13 +1,13 @@
 import React from 'react';
 import {
     Jumbotron,
-    Button
-  } from 'react-bootstrap';
+    Button,
+} from 'react-bootstrap';
 
 function About() {
     // CSS style sheet for the Jumbotron
-    var jumboStyle = {
-        'background-color': '#ffffff'
+    const jumboStyle = {
+        'backgroundColor': '#ffffff',
     };
     
     return (

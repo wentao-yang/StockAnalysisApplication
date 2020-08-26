@@ -4,18 +4,18 @@ import {
     Button,
     Container,
     Row,
-    Col
-  } from 'react-bootstrap';
+    Col,
+} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 function Home() {
     // CSS style sheet for certain elements
-    var jumboStyle = {
-        'background-color': '#ffffff'
+    const jumboStyle = {
+        'backgroundColor': '#ffffff',
     };
 
-    var containerStyle = {
-        'width': '25%'
+    const containerStyle = {
+        'width': '25%',
     };
     
     return (
