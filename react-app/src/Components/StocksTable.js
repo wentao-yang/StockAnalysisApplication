@@ -16,7 +16,7 @@ function StocksTable(props) {
         <div>
             {/* Can sort by pressing thead */}
             <Table striped bordered hover size='sm'>
-                <thead  onClick={() => props.setSorted(!props.sorted)}>
+                <thead onClick={() => props.setSorted(!props.sorted)}>
                     <tr>
                         <th>Stock Ticker Symbol</th>
                     </tr>

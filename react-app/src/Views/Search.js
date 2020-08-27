@@ -1,4 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { 
+    useState, 
+    useEffect 
+} from 'react';
 import { Jumbotron } from 'react-bootstrap';
 import StockTable from '../Components/StocksTable.js';
 
@@ -36,4 +39,4 @@ function Search(props) {
     )
 }
 
-export default Search
+export default Search;

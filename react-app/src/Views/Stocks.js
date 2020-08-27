@@ -24,4 +24,4 @@ function Stocks(props) {
     )
 }
 
-export default Stocks
+export default Stocks;

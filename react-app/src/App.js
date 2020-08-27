@@ -66,7 +66,6 @@ function App() {
       </div>
     );
   } else { // Loading screen
-
     // Spinner style
     const loadStyle = {
       'position': 'fixed',
@@ -80,7 +79,6 @@ function App() {
       </div>
     )
   }
-  
 }
 
 export default App;
