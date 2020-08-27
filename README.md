@@ -35,6 +35,12 @@ First, activate InfluxDB:
 > make db
 ```
 
+You will need to create an environment variable for the Quandl API Key:
+
+```
+export QUANDL_API_KEY='YOURQUANDLAPIKEY'
+```
+
 Then, open ```dbSetup.py``` and change the necessary parameters. More instructions will be in the file's comments. After this, you can run the setup file:
 
 ```
@@ -65,7 +71,21 @@ You can stop both services using this command:
 
 ## Activating Django as the Backend Framework
 
-Before activating Django, go into ```/django_project/app/views.py``` and change the parameters similar to dbSetup.py. Then, you can activate Django as the backend framework:
+Before activating Django, go into ```/django_project/app/views.py``` and change the parameters similar to dbSetup.py. Next, create a new Django Secret Key and set an environment variable for it:
+
+```
+export DJANGO_SECRET_KEY="YOURDJANGOSECRETKEY"
+```
+
+You can get a new DJango Secret Key using the following Python code:
+
+```
+from django.core.management.utils import get_random_secret_key  
+print(get_random_secret_key())
+```
+
+
+Then, you can activate Django as the backend framework:
 
 ```
 > make django
