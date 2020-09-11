@@ -1,4 +1,4 @@
-# StockAnalysisApplication [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+# Stock Historical Data Application [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 An application that stores historical stock data into an InfluxDB database, uses Django as the backend framework for the API, and React as the frontend framework with Bootstrap. 
 
